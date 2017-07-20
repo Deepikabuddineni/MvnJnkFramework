@@ -18,8 +18,8 @@ public class SDET_Login_Testcase extends TestBase{
 @Test
 public void tc_loginTestCase(){
 	click("xpath_LoginBtn");
-	type("xpath User","");
-	type("id_pwd","");
+	type("xpath User","FM-SDET");
+	type("id_pwd","Hexaware");
 	click ("id_bottomLoginbutton");
 	Assert.assertEquals("","");
 	
