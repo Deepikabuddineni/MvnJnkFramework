@@ -97,7 +97,12 @@ public class TestBase {
 
 				if (config.getProperty("browser").equals("firefox")) {
 
-					 System.setProperty("webdriver.gecko.driver", "gecko.exe");
+
+					 
+
+					 
+
+                   System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\geckodriver.exe");
 					driver = new FirefoxDriver();
 			//		log.debug("FF Launched !!!");
 
